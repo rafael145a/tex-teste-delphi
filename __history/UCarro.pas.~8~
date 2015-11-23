@@ -1,0 +1,16 @@
+unit UCarro;
+
+interface
+
+uses Dialogs, SysUtils, UTransporte;
+
+type
+TCarro = class(TTransporte)
+
+public
+procedure move(metros: Real); overload;
+end;
+
+implementation
+
+end.

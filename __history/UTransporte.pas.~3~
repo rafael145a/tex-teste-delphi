@@ -1,0 +1,18 @@
+unit UTransporte;
+
+interface
+type
+TTransporte = class
+
+private
+Fnome: string;
+
+procedure setNome(const Value: String);
+
+public
+property Nome:String read Fnome write SetNome;
+
+end;
+implementation
+
+end.

@@ -1,0 +1,9 @@
+unit UAviao;
+
+interface
+type
+TAviao = class(TTransporte)
+
+implementation
+
+end.

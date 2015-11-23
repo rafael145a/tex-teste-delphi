@@ -1,0 +1,12 @@
+unit UAviao;
+
+interface
+uses Dialogs, SysUtils, UTransporte;
+type
+TAviao = class(TTransporte)
+
+end;
+
+implementation
+
+end.

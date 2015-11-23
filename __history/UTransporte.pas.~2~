@@ -1,0 +1,13 @@
+unit UTransporte;
+
+interface
+type
+TTransporte = class
+
+private
+Fnome: string;
+
+end;
+implementation
+
+end.

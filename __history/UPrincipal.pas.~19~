@@ -1,0 +1,35 @@
+unit UPrincipal;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TfrmPrincipal = class(TForm)
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+uses UTransporte, UCarro;
+{$R *.dfm}
+
+procedure TfrmPrincipal.Button1Click(Sender: TObject);
+var
+  carro: TCarro;
+begin
+  carro := TCarro.Create('Audi');
+  carro.move;
+end;
+
+end.

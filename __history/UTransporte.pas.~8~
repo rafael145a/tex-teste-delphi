@@ -1,0 +1,37 @@
+unit UTransporte;
+
+interface
+type
+TTransporte = class
+
+private
+Fnome: string;
+
+procedure setNome(const Value: String);
+
+public
+property Nome:String read Fnome write SetNome;
+procedure move(metros: Real);
+
+Constructor Create(nome: string);
+
+end;
+implementation
+
+{TTransporte}
+constructor TTransporte.Create(nome: string);
+begin
+  setNome(nome);
+end;
+
+procedure TTransporte.move(metros: Real);
+begin
+  ShowMessage(Self.Nome + ' moveu ' + metros + 'm');
+end;
+
+procedure TTransporte.setNome(const Value: string);
+begin
+  Fnome := Value;
+end;
+
+end.

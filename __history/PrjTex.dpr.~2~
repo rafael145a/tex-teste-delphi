@@ -1,0 +1,15 @@
+program PrjTex;
+
+uses
+  Forms,
+  UPrincipal in 'UPrincipal.pas' {frmPrincipal},
+  UTransporte in 'UTransporte.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.Run;
+end.

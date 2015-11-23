@@ -1,0 +1,24 @@
+unit UCarro;
+
+interface
+
+uses Dialogs, SysUtils, UTransporte;
+
+type
+TCarro = class(TTransporte)
+
+public
+procedure move(); overload;
+end;
+
+implementation
+
+{ TCarro }
+
+procedure TCarro.move();
+  const metros: real = 500;
+begin
+  TTransporte.Create(Nome).move(500);
+end;
+
+end.

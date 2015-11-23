@@ -1,0 +1,12 @@
+unit UCarro;
+
+interface
+
+uses Dialogs, SysUtils, UTransporte;
+
+type
+TCarro = class(TTransporte)
+
+implementation
+
+end.
